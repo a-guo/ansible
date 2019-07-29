@@ -1,0 +1,22 @@
+{
+  "nodes": {
+    "staging": {
+      ":guest": "8000",
+      ":host": "8011",
+      "ports": [],
+      ":memory": 2048,
+      ":os_image": "precise64",
+      ":provisioner": "bash_script",
+      ":bootstrap": "postprovisioning/scripts/splunk.sh"
+    },
+    "prod": {
+      ":guest": "8000",
+      ":host": "8012",
+      "ports": [],
+      ":memory": 2048,
+      ":os_image": "precise64",
+      ":provisioner": "bash_script",
+      ":bootstrap": "postprovisioning/scripts/splunk.sh"
+    }
+ }
+}
